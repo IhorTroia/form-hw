@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="form">
+      <form id="form" action="https://fom.in.ua/echo">
         <div class="container">
           <div class="switch">
             <input type="checkbox" id="switch" />
@@ -19,14 +19,33 @@
           </div>
           <h1>Вход</h1>
           <div class="email">
-            <input type="email" id="email" placeholder="Введите E-mail" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Введите E-mail"
+              required
+            />
           </div>
           <div class="password">
-            <input type="password" id="password" placeholder="Пароль" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Пароль"
+              minlength="8"
+              maxlength="16"
+              required
+            />
           </div>
           <div class="under-pass">
             <div class="check">
-              <input class="custom-check" type="checkbox" id="check" />
+              <input
+                class="custom-check"
+                name="remember-me"
+                type="checkbox"
+                id="check"
+              />
               <label for="check">Запомнить меня</label>
             </div>
             <div class="under-pass-link">
@@ -71,7 +90,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>

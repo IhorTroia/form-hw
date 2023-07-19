@@ -35,7 +35,7 @@ h2 {
 }
 
 .wrapper {
-  background: url(/images/main-bg.webp) no-repeat center center fixed;
+  background: url("/images/main-bg.webp") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -51,7 +51,7 @@ h2 {
 
 /* ?FORMS */
 
-.form {
+#form {
   max-width: 500px;
   min-height: 100vh;
   margin-left: auto;
