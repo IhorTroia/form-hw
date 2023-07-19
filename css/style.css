@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
@@ -35,7 +35,7 @@ h2 {
 }
 
 .wrapper {
-  background: url("/images/main-bg.webp") no-repeat center center fixed;
+  background: url("../images/main-bg.webp") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -108,6 +108,10 @@ h2 {
 
 .text2 {
   left: 65%;
+}
+
+.switch input:focus + label::before {
+  border: 1px solid #ffffff;
 }
 
 /* ?EMAIL & PASSWORD */
@@ -187,6 +191,10 @@ h2 {
   color: #153416;
 }
 
+.custom-check:focus + label::before {
+  border: 1px solid #ffffff;
+}
+
 /* ?ENTER */
 
 .enter input {
@@ -224,6 +232,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 15px;
+  padding-bottom: 20px;
 }
 
 .icon {
